@@ -1,0 +1,91 @@
+body{
+    background-color: #ffe0f3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+    color: #08e6ff;
+}
+
+#img1{
+    padding-top: 60px;
+    margin-left: 400px;
+    transform: rotateY(180deg);
+}
+
+#img2{
+    padding-top: 20px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
+#rock{
+    position: absolute;
+    left: 400px;
+    top: 75%;
+    visibility: hidden;
+}
+
+#paper{
+    position: absolute;
+    left: 560px;
+    top: 75%;
+    visibility: hidden;
+}
+
+#scissors{
+    position: absolute;
+    top: 75%;
+    left: 720px;
+    visibility: hidden;
+}
+
+button{
+    height: 80px;
+    width: 140px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #00a9ff;
+    color: floralwhite;
+    border: solid 4px floralwhite;
+    border-radius: 44px;
+    cursor: pointer;
+    margin-left: 240px;
+}
+
+#start{
+    background-color: #b096e9;
+    position: absolute;
+    top: 75%;
+    left: 32%;
+}
+
+@keyframes shakeLeft {
+    0%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    100%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+}
+
+@keyframes shakeRight {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
